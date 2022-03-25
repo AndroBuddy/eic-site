@@ -1,10 +1,10 @@
 <template>
-	<header id="header" class="flex w-full justify-between items-center px-8 py-5 z-40 sticky -top-0 border-white border-b-2 backdrop-blur transition-colors duration-500 bg-transparent" :class="{'bg-black/5': !showNavbar}">
+	<header id="header" class="flex w-full justify-between items-center px-8 py-5 z-40 sticky -top-0 backdrop-blur transition-colors duration-500 bg-transparent" :class="{'bg-slate-800/5': !showNavbar}">
 		<a href="/" class="flex items-center gap-2 font-bold">
 			<img src="../assets/logo.png" class="lg:w-12 w-6 select-none" />
-			E-Summit'22	
+			E-Summit
 		</a>
-		<ul class="lg:flex hidden gap-6">
+		<ul class="lg:flex hidden gap-6 font-bold">
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#home`">Home</a></li>
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#about`">About</a></li>
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#events`">Events</a></li>
@@ -14,7 +14,7 @@
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#prizes`">Prizes</a></li>
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#team`">Team</a></li>
 		</ul>
-		<button class="h-10 px-6 font-semibold rounded-md bg-black text-white hidden lg:block" type="submit">
+		<button class="h-10 px-6 font-semibold rounded-md text-white hidden lg:block" style="background-color: #f95700;" type="submit">
 			Join Us
 		</button>
 		<div class="block lg:hidden" @click="overflow = true">
@@ -84,6 +84,6 @@ export default {
 
 <style>
 header {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 </style>

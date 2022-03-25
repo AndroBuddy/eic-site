@@ -3,4 +3,4 @@ import App from './App.vue'
 import './index.css'
 import VueScrollTo from 'vue-scrollto'
 
-createApp(App).use(VueScrollTo, {offset: -82}).mount('#app')
+createApp(App).use(VueScrollTo, {offset: -92.94}).mount('#app')
