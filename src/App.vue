@@ -7,14 +7,38 @@ import Header from './components/Header.vue'
 <template>
 	<Header/>
 	<div class="flex flex-col gap-8 mx-6">
-		<div id="home" class="ctnr flex justify-center items-center w-full rounded-2xl bg-slate-200 font-bold">Placeholder card</div>
-		<div id="about" class="ctnr flex justify-center items-center w-full rounded-2xl bg-slate-200 font-bold">Placeholder card</div>
-		<div id="tracks" class="ctnr flex justify-center items-center w-full rounded-2xl bg-slate-200 font-bold">Placeholder card</div>
-		<div id="sponsors" class="ctnr flex justify-center items-center w-full rounded-2xl bg-slate-200 font-bold">Placeholder card</div>
-		<div id="schedule" class="ctnr flex justify-center items-center w-full rounded-2xl bg-slate-200 font-bold">Placeholder card</div>
-		<div id="prizes" class="ctnr flex justify-center items-center w-full rounded-2xl bg-slate-200 font-bold">Placeholder card</div>
-		<div id="events" class="ctnr flex justify-center items-center w-full rounded-2xl bg-slate-200 font-bold">Placeholder card</div>
-		<div id="team" class="ctnr flex justify-center items-center w-full rounded-2xl bg-slate-200 font-bold">Placeholder card</div>
+		<div id="home" class="ctnr flex justify-around items-center p-8 gap-8 w-full rounded-2xl bg-slate-200 font-bold">
+			<div class="flex justify-center items-center bg-black/5 w-1/2 h-full rounded-2xl">Image box</div>
+			<div class="flex justify-center items-center bg-black/5 w-1/2 h-full rounded-2xl">Text box</div>
+		</div>
+		<div id="about" class="ctnr flex justify-center items-center p-8 gap-8 w-full rounded-2xl bg-slate-200 font-bold">
+			<div class="flex justify-center items-center bg-black/5 w-1/2 h-full rounded-2xl">Image box</div>
+			<div class="flex justify-center items-center bg-black/5 w-1/2 h-full rounded-2xl">Text box</div>
+		</div>
+		<div id="tracks" class="ctnr flex justify-center items-center p-8 gap-8 w-full rounded-2xl bg-slate-200 font-bold">
+			<div class="flex justify-center items-center bg-black/5 w-1/2 h-full rounded-2xl">Image box</div>
+			<div class="flex justify-center items-center bg-black/5 w-1/2 h-full rounded-2xl">Text box</div>
+		</div>
+		<div id="sponsors" class="ctnr flex justify-center items-center p-8 gap-8 w-full rounded-2xl bg-slate-200 font-bold">
+			<div class="flex justify-center items-center bg-black/5 w-1/2 h-full rounded-2xl">Image box</div>
+			<div class="flex justify-center items-center bg-black/5 w-1/2 h-full rounded-2xl">Text box</div>
+		</div>
+		<div id="schedule" class="ctnr flex justify-center items-center p-8 gap-8 w-full rounded-2xl bg-slate-200 font-bold">
+			<div class="flex justify-center items-center bg-black/5 w-1/2 h-full rounded-2xl">Image box</div>
+			<div class="flex justify-center items-center bg-black/5 w-1/2 h-full rounded-2xl">Text box</div>
+		</div>
+		<div id="prizes" class="ctnr flex justify-center items-center p-8 gap-8 w-full rounded-2xl bg-slate-200 font-bold">
+			<div class="flex justify-center items-center bg-black/5 w-1/2 h-full rounded-2xl">Image box</div>
+			<div class="flex justify-center items-center bg-black/5 w-1/2 h-full rounded-2xl">Text box</div>
+		</div>
+		<div id="events" class="ctnr flex justify-center items-center p-8 gap-8 w-full rounded-2xl bg-slate-200 font-bold">
+			<div class="flex justify-center items-center bg-black/5 w-1/2 h-full rounded-2xl">Image box</div>
+			<div class="flex justify-center items-center bg-black/5 w-1/2 h-full rounded-2xl">Text box</div>
+		</div>
+		<div id="team" class="ctnr flex justify-center items-center p-8 gap-8 w-full rounded-2xl bg-slate-200 font-bold">
+			<div class="flex justify-center items-center bg-black/5 w-1/2 h-full rounded-2xl">Image box</div>
+			<div class="flex justify-center items-center bg-black/5 w-1/2 h-full rounded-2xl">Text box</div>
+		</div>
 	</div>
 </template>
 
