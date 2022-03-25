@@ -16,13 +16,18 @@ import Footer from './components/Footer.vue';
 			</div>
 		</div>
 		<div id="about" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
-			<h1>Title</h1>
+			<h1>About</h1>
 			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
 				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
-				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
+				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">
+					Innovation & Entrepreneurship are at the core of University’s mission statement. With a view to build strong innovation and entrepreneurship culture across the University, a ‘Centre for Entrepreneurship & Innovation (CEI)’ is established in 2019. With a view to create an enabling eco-system on campus and to develop leadership and organizational skills, the center has instituted and setup a Student Entrepreneurship and Innovation Cell (EIC). 
+The cell having 250 members is the second largest club on campus. It organizes events that exposes students to various aspects of the entrepreneurial lifestyle by conducting, Hackathon, Meets, business simulation games, talks and visits to industrial parks. The Center also helps the cell members to participate in international competitions. 
+
+EIC’s flagship event is the annual E-summit relishes being a platform that brings several people part of the entrepreneurial ecosystem together. 
+				</div>
 			</div>
 		</div>
-		<div id="tracks" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
+		<div id="events" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
 			<h1>Title</h1>
 			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
 				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
@@ -50,7 +55,7 @@ import Footer from './components/Footer.vue';
 				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
 			</div>
 		</div>
-		<div id="events" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
+		<div id="" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
 			<h1>Title</h1>
 			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
 				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>

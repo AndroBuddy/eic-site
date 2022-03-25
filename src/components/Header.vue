@@ -1,17 +1,17 @@
 <template>
 	<header id="header" class="flex w-full justify-between items-center px-8 py-5 z-40 sticky -top-0 border-white border-b-2 backdrop-blur transition-colors duration-500 bg-transparent" :class="{'bg-black/5': !showNavbar}">
-		<a href="/" class="font-bold">
-			<!-- <img src="../assets/enigma.svg" class="lg:w-auto w-6 select-none" /> -->
-			EIC.
+		<a href="/" class="flex items-center gap-2 font-bold">
+			<img src="../assets/logo.png" class="lg:w-12 w-6 select-none" />
+			E-Summit'22	
 		</a>
 		<ul class="lg:flex hidden gap-6">
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#home`">Home</a></li>
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#about`">About</a></li>
-			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#tracks`">Tracks</a></li>
+			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#events`">Events</a></li>
+			<!-- <li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#tracks`">Tracks</a></li> -->
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#sponsors`">Sponsors</a></li>
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#schedule`">Schedule</a></li>
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#prizes`">Prizes</a></li>
-			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#events`">Events</a></li>
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#team`">Team</a></li>
 		</ul>
 		<button class="h-10 px-6 font-semibold rounded-md bg-black text-white hidden lg:block" type="submit">
@@ -37,11 +37,11 @@
 			<ul class="flex flex-col gap-12 text-black">
 				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#home`">Home</a></li>
 				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#about`">About</a></li>
-				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#tracks`">Tracks</a></li>
+				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#events`">Events</a></li>
+				<!--<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#tracks`">Tracks</a></li>-->
 				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#sponsors`">Sponsors</a></li>
 				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#schedule`">Schedule</a></li>
 				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#prizes`">Prizes</a></li>
-				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#events`">Events</a></li>
 				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#team`">Team</a></li>
 			</ul>
 			<button class="mt-12 h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
