@@ -2,11 +2,12 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import Header from './components/Header.vue'
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
 	<Header/>
-	<div class="flex flex-col gap-8 mx-6">
+	<div class="flex flex-col gap-8 mx-6 mb-6">
 		<div id="home" class="ctnr flex justify-around items-center p-8 gap-8 w-full rounded-2xl bg-slate-200 font-bold">
 			<div class="flex justify-center items-center bg-black/5 w-1/2 h-full rounded-2xl">Image box</div>
 			<div class="flex justify-center items-center bg-black/5 w-1/2 h-full rounded-2xl">Text box</div>
@@ -40,6 +41,7 @@ import Header from './components/Header.vue'
 			<div class="flex justify-center items-center bg-black/5 w-1/2 h-full rounded-2xl">Text box</div>
 		</div>
 	</div>
+	<Footer/>
 </template>
 
 <style>
