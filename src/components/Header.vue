@@ -5,14 +5,14 @@
 			EIC.
 		</a>
 		<ul class="lg:flex hidden gap-6">
-			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer">Home</a></li>
-			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer">About</a></li>
-			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer">Tracks</a></li>
-			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer">Sponsors</a></li>
-			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer">Schedule</a></li>
-			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer">Prizes</a></li>
-			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer">Events</a></li>
-			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer">Team</a></li>
+			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#home`">Home</a></li>
+			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#about`">About</a></li>
+			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#tracks`">Tracks</a></li>
+			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#sponsors`">Sponsors</a></li>
+			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#schedule`">Schedule</a></li>
+			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#prizes`">Prizes</a></li>
+			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#events`">Events</a></li>
+			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#team`">Team</a></li>
 		</ul>
 		<button class="h-10 px-6 font-semibold rounded-md bg-black text-white hidden lg:block" type="submit">
 			Join Us
@@ -35,14 +35,14 @@
 				</svg>
 			</button>
 			<ul class="flex flex-col gap-12 text-black">
-				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer">Home</a></li>
-				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer">About</a></li>
-				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer">Tracks</a></li>
-				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer">Sponsors</a></li>
-				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer">Schedule</a></li>
-				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer">Prizes</a></li>
-				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer">Events</a></li>
-				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer">Team</a></li>
+				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#home`">Home</a></li>
+				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#about`">About</a></li>
+				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#tracks`">Tracks</a></li>
+				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#sponsors`">Sponsors</a></li>
+				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#schedule`">Schedule</a></li>
+				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#prizes`">Prizes</a></li>
+				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#events`">Events</a></li>
+				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#team`">Team</a></li>
 			</ul>
 			<button class="mt-12 h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
 			Join Us
@@ -85,11 +85,5 @@ export default {
 <style>
 header {
 	font-family: 'Montserrat', sans-serif;
-}
-
-.over-flow {
-	background: rgba(256, 256, 256, 0.6);
-	margin-top: 64px;
-	height: calc(100vh - 64px);
 }
 </style>
