@@ -8,37 +8,61 @@ import Footer from './components/Footer.vue';
 <template>
 	<Header/>
 	<div class="flex flex-col gap-8 mx-6 mb-6">
-		<div id="home" class="ctnr flex flex-col lg:flex-row justify-around items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
-			<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
-			<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
+		<div id="home" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
+			<h1>Title</h1>
+			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
+				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
+				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
+			</div>
 		</div>
-		<div id="about" class="ctnr flex flex-col lg:flex-row justify-center items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
-			<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
-			<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
+		<div id="about" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
+			<h1>Title</h1>
+			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
+				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
+				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
+			</div>
 		</div>
-		<div id="tracks" class="ctnr flex flex-col lg:flex-row justify-center items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
-			<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
-			<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
+		<div id="tracks" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
+			<h1>Title</h1>
+			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
+				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
+				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
+			</div>
 		</div>
-		<div id="sponsors" class="ctnr flex flex-col lg:flex-row justify-center items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
-			<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
-			<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
+		<div id="sponsors" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
+			<h1>Title</h1>
+			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
+				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
+				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
+			</div>
 		</div>
-		<div id="schedule" class="ctnr flex flex-col lg:flex-row justify-center items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
-			<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
-			<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
+		<div id="schedule" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
+			<h1>Title</h1>
+			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
+				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
+				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
+			</div>
 		</div>
-		<div id="prizes" class="ctnr flex flex-col lg:flex-row justify-center items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
-			<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
-			<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
+		<div id="prizes" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
+			<h1>Title</h1>
+			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
+				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
+				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
+			</div>
 		</div>
-		<div id="events" class="ctnr flex flex-col lg:flex-row justify-center items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
-			<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
-			<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
+		<div id="events" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
+			<h1>Title</h1>
+			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
+				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
+				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
+			</div>
 		</div>
-		<div id="team" class="ctnr flex flex-col lg:flex-row justify-center items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
-			<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
-			<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
+		<div id="team" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-200 font-bold">
+			<h1>Title</h1>
+			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
+				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
+				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
+			</div>
 		</div>
 	</div>
 	<Footer/>
