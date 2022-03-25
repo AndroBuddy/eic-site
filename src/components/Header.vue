@@ -1,5 +1,5 @@
 <template>
-	<header class="flex justify-between items-center px-8 py-5 z-40 sticky -top-0 border-white border-b-2" :class="{'backdrop-filter backdrop-blur': !overflow, 'fixed w-screen': overflow}">
+	<header id="header" class="flex w-full justify-between items-center px-8 py-5 z-40 sticky -top-0 border-white border-b-2 backdrop-blur transition-colors duration-500 bg-transparent" :class="{'bg-black/5': !showNavbar}">
 		<a href="/" class="font-bold">
 			<!-- <img src="../assets/enigma.svg" class="lg:w-auto w-6 select-none" /> -->
 			EIC.
@@ -55,9 +55,30 @@
 export default {
 	data() {
 		return {
-			overflow: false
+			overflow: false,
+			showNavbar: true,
+			lastScrollPosition: 0
 		}
+	},
+	mounted() {
+		window.addEventListener('scroll', this.onScroll)
+	},
+	beforeDestroy() {
+		window.removeEventListener('scroll', this.onScroll)
+	},
+	methods: {
+	onScroll () {
+		const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
+		if (currentScrollPosition < 0) {
+			return
+		}
+		if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 1) {
+			return
+		}
+		this.showNavbar = currentScrollPosition < this.lastScrollPosition
+		this.lastScrollPosition = currentScrollPosition
 	}
+}
 }
 </script>
 

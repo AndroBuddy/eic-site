@@ -6,6 +6,16 @@ import Header from './components/Header.vue'
 
 <template>
 	<Header/>
+	<div class="flex flex-col gap-8 mx-6">
+		<div id="home" class="ctnr flex justify-center items-center w-full rounded-2xl bg-slate-200 font-bold">Placeholder card</div>
+		<div id="about" class="ctnr flex justify-center items-center w-full rounded-2xl bg-slate-200 font-bold">Placeholder card</div>
+		<div id="tracks" class="ctnr flex justify-center items-center w-full rounded-2xl bg-slate-200 font-bold">Placeholder card</div>
+		<div id="sponsors" class="ctnr flex justify-center items-center w-full rounded-2xl bg-slate-200 font-bold">Placeholder card</div>
+		<div id="schedule" class="ctnr flex justify-center items-center w-full rounded-2xl bg-slate-200 font-bold">Placeholder card</div>
+		<div id="prizes" class="ctnr flex justify-center items-center w-full rounded-2xl bg-slate-200 font-bold">Placeholder card</div>
+		<div id="events" class="ctnr flex justify-center items-center w-full rounded-2xl bg-slate-200 font-bold">Placeholder card</div>
+		<div id="team" class="ctnr flex justify-center items-center w-full rounded-2xl bg-slate-200 font-bold">Placeholder card</div>
+	</div>
 </template>
 
 <style>
@@ -17,5 +27,9 @@ import Header from './components/Header.vue'
 	-moz-osx-font-smoothing: grayscale;
 	color: black;
 	min-height: 100vh;
+}
+
+.ctnr {
+	height: calc(100vh - 82px - 1.5rem);
 }
 </style>
