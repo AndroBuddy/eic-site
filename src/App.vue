@@ -8,8 +8,8 @@ import Footer from './components/Footer.vue';
 <template>
 	<Header/>
 	<div class="flex flex-col gap-8 mx-6 lg:mx-24 mb-6">
-		<div id="home" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/80 font-bold shadow-lg backdrop-blur-sm">
-			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full lg:gap-8 lg:px-24">
+		<div id="home" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/40 font-bold shadow-lg backdrop-blur-sm">
+			<div class="flex flex-col lg:flex-row justify-around items-center flex-grow w-full lg:gap-8 lg:px-24">
 				<div class="flex justify-center items-center w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">
 					<img src="./assets/logo.png" alt="">
 				</div>
@@ -22,18 +22,18 @@ import Footer from './components/Footer.vue';
 						<span>28th - 29th April 2022</span>
 					</div>
 					<div class="flex gap-6">
-						<button class="h-10 px-6 font-semibold rounded-md text-white hidden lg:block" style="background-color: #f95700;" type="submit">
+						<button class="h-10 px-6 font-semibold rounded-md text-white" style="background-color: #f95700;" type="submit">
 							Register
 						</button>
-						<button class="h-10 px-6 font-semibold rounded-md text-white hidden lg:block" style="background-color: #5865F2;" type="submit">
+						<button class="h-10 px-6 font-semibold rounded-md text-white" style="background-color: #5865F2;" type="submit">
 							<img src="./assets/Discord-Logo+Wordmark-White.svg" class="w-24">
 						</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="about" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 w-full rounded-2xl bg-slate-100/80 font-bold shadow-lg backdrop-blur-sm">
-			<h1 class="text-4xl">About <span class="italic" style="color: #f95700;">E-Summit</span></h1>
+		<div id="about" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-12 w-full rounded-2xl bg-slate-100/40 font-bold shadow-lg backdrop-blur-sm">
+			<h1 class="thugo">About <span class="italic" style="color: #f95700;">E-Summit</span></h1>
 			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
 				<div class="flex justify-center items-center w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">
 					<img src="./assets/logo.png" alt="">
@@ -51,42 +51,47 @@ import Footer from './components/Footer.vue';
 				</div>
 			</div>
 		</div>
-		<div id="events" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/80 font-bold shadow-lg backdrop-blur-sm">
+		<div id="events" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/40 font-bold shadow-lg backdrop-blur-sm">
 			<h1>Title</h1>
 			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
 				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
 				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
 			</div>
 		</div>
-		<div id="sponsors" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/80 font-bold shadow-lg backdrop-blur-sm">
+		<div id="sponsors" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/40 font-bold shadow-lg backdrop-blur-sm">
 			<h1>Title</h1>
 			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
 				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
 				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
 			</div>
 		</div>
-		<div id="schedule" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/80 font-bold shadow-lg backdrop-blur-sm">
+		<div id="schedule" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/40 font-bold shadow-lg backdrop-blur-sm">
+			<h1 class="thugo"><span class="italic" style="color: #f95700;">E-Summit</span> Schedule</h1>
+			<div class="flex flex-grow w-full gap-6 lg:gap-8" v-for="i in 10" :key="i">
+				<div class="flex items-center bg-black/5 w-full rounded-2xl gap-6 p-2 lg:p-4">
+					<div class="flex flex-col items-center w-20 p-1 bg-slate-400/20 rounded-md">
+						<h1 style="color: #f95700;">12:00</h1>
+						<h2 class="font-normal">1st Apr</h2>
+					</div>
+					<div>Event info</div>
+				</div>
+			</div>
+		</div>
+		<div id="prizes" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/40 font-bold shadow-lg backdrop-blur-sm">
 			<h1>Title</h1>
 			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
 				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
 				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
 			</div>
 		</div>
-		<div id="prizes" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/80 font-bold shadow-lg backdrop-blur-sm">
+		<div id="" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/40 font-bold shadow-lg backdrop-blur-sm">
 			<h1>Title</h1>
 			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
 				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
 				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
 			</div>
 		</div>
-		<div id="" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/80 font-bold shadow-lg backdrop-blur-sm">
-			<h1>Title</h1>
-			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
-				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
-				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
-			</div>
-		</div>
-		<div id="team" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/80 font-bold shadow-lg backdrop-blur-sm">
+		<div id="team" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/40 font-bold shadow-lg backdrop-blur-sm">
 			<h1>Title</h1>
 			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
 				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
@@ -106,7 +111,7 @@ import Footer from './components/Footer.vue';
 	-moz-osx-font-smoothing: grayscale;
 	color: black;
 	min-height: 100vh;
-	background: url(./assets/8e105b2d-8986-4182-83ec-4c429f7e0058.png) fixed;
+	background: url(./assets/gradienta-pYDaWACPVZw-unsplash.jpg) fixed;
 	background-size: cover;
 }
 
