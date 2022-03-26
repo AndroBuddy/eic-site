@@ -7,7 +7,7 @@ import Footer from './components/Footer.vue';
 
 <template>
 	<Header/>
-	<div class="flex flex-col gap-8 mx-6 lg:mx-24 mb-6">
+	<div class="flex flex-col gap-8 mx-6 lg:mx-24 mb-12">
 		<div id="home" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/40 font-bold shadow-lg backdrop-blur-sm">
 			<div class="flex flex-col lg:flex-row justify-around items-center flex-grow w-full lg:gap-8 lg:px-24">
 				<div class="flex justify-center items-center w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">
@@ -15,7 +15,7 @@ import Footer from './components/Footer.vue';
 				</div>
 				<div class="flex flex-col justify-center items-center gap-6 w-full lg:w-1/2 h-1/2 lg:h-full">
 					<div class="flex flex-col justify-center items-center text-lg lg:text-4xl">
-						<h1 class="thugo"><span style="color: #f95700;">E-Summit</span>'22</h1>
+						<h1 class="thugo"><span style="color: #f95700;">E-Summit</span><span class="italic">'22</span></h1>
 						<span class="font-normal italic text-black/60">Triumph Over Turmoil</span>
 					</div>
 					<div class="flex flex-col justify-center items-center text-xl lg:text-3xl text-black/40">
@@ -51,15 +51,23 @@ import Footer from './components/Footer.vue';
 				</div>
 			</div>
 		</div>
-		<div id="events" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/40 font-bold shadow-lg backdrop-blur-sm">
-			<h1>Title</h1>
-			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
-				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
-				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
+		<div id="events" class="ctnr flex flex-col p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/40 font-bold shadow-lg backdrop-blur-sm">
+			<h1 class="thugo self-center" style="color: #f95700;">Events</h1>
+			<div class="grid grid-cols-1 lg:grid-cols-3 auto-rows-auto gap-6">
+				<div v-for="i in 5" :key="i">
+					<div class="flex flex-col bg-black/5 h-64 rounded-xl">
+						<div class=" bg-blue-50 p-6 rounded-t-xl">
+							Image banner {{ i }}
+						</div>
+						<div class="p-6 font-normal">
+							Details of the event
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div id="sponsors" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/40 font-bold shadow-lg backdrop-blur-sm">
-			<h1>Title</h1>
+			<h1 class="thugo" style="color: #f95700;">Sponsors</h1>
 			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
 				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
 				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
@@ -78,21 +86,14 @@ import Footer from './components/Footer.vue';
 			</div>
 		</div>
 		<div id="prizes" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/40 font-bold shadow-lg backdrop-blur-sm">
-			<h1>Title</h1>
-			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
-				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
-				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
-			</div>
-		</div>
-		<div id="" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/40 font-bold shadow-lg backdrop-blur-sm">
-			<h1>Title</h1>
+			<h1 class="thugo" style="color: #f95700;">Prizes</h1>
 			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
 				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
 				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
 			</div>
 		</div>
 		<div id="team" class="ctnr flex flex-col items-center p-6 lg:p-8 gap-6 lg:gap-8 w-full rounded-2xl bg-slate-100/40 font-bold shadow-lg backdrop-blur-sm">
-			<h1>Title</h1>
+			<h1 class="thugo" style="color: #f95700;">Team</h1>
 			<div class="flex flex-col lg:flex-row justify-center items-center flex-grow w-full gap-6 lg:gap-8">
 				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Image box</div>
 				<div class="flex justify-center items-center bg-black/5 w-full lg:w-1/2 h-1/2 lg:h-full rounded-2xl">Text box</div>
@@ -103,10 +104,10 @@ import Footer from './components/Footer.vue';
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
 #app {
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Rubik', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	color: black;

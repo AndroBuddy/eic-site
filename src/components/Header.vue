@@ -4,7 +4,7 @@
 			<img src="../assets/logo.png" class="lg:w-12 w-6 select-none" />
 			E-Summit
 		</a>
-		<ul class="lg:flex hidden gap-6 font-bold">
+		<ul class="lg:flex hidden gap-6 font-bold text-black/60">
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#home`">Home</a></li>
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#about`">About</a></li>
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#events`">Events</a></li>
@@ -84,6 +84,6 @@ export default {
 
 <style>
 header {
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Rubik', sans-serif;
 }
 </style>
