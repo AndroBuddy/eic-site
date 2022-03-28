@@ -1,20 +1,20 @@
 <template>
 	<header id="header" class="flex w-full justify-between items-center px-8 py-5 z-40 sticky -top-0 backdrop-blur transition-colors duration-500 bg-transparent" :class="{'bg-slate-800/5': !showNavbar}">
 		<a href="/" class="flex items-center gap-2 font-bold">
-			<img src="../assets/logo.png" class="lg:w-12 w-6 select-none" />
-			E-Summit
+			<img src="../assets/esummit.svg" class="lg:w-12 w-6 select-none" />
+			E-SUMMIT
 		</a>
 		<ul class="lg:flex hidden gap-6 font-bold text-black/40">
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#home`" :class="{'nav-col': home}" @click="home = !home, about = false, events = false, sponsors = false, schedule = false, prizes = false, team = false">Home</a></li>
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#about`" :class="{'nav-col': about}" @click="home = false, about = !about, events = false, sponsors = false, schedule = false, prizes = false, team = false">About</a></li>
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#events`" :class="{'nav-col': events}" @click="home = false, about = false, events = !events, sponsors = false, schedule = false, prizes = false, team = false">Events</a></li>
 			<!-- <li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#tracks`">Tracks</a></li> -->
-			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#sponsors`" :class="{'nav-col': sponsors}" @click="home = false, about = false, events = false, sponsors = !sponsors, schedule = false, prizes = false, team = false">Sponsors</a></li>
+			<!-- <li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#sponsors`" :class="{'nav-col': sponsors}" @click="home = false, about = false, events = false, sponsors = !sponsors, schedule = false, prizes = false, team = false">Sponsors</a></li> -->
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#schedule`" :class="{'nav-col': schedule}" @click="home = false, about = false, events = false, sponsors = false, schedule = !schedule, prizes = false, team = false">Schedule</a></li>
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#prizes`" :class="{'nav-col': prizes}" @click="home = false, about = false, events = false, sponsors = false, schedule = false, prizes = !prizes, team = false">Prizes</a></li>
 			<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#team`" :class="{'nav-col': team}" @click="home = false, about = false, events = false, sponsors = false, schedule = false, prizes = false, team = !team">Team</a></li>
 		</ul>
-		<button class="h-10 px-6 font-semibold rounded-md text-white hidden lg:block" style="background-color: #f95700;" type="submit">
+		<button class="h-10 px-6 font-semibold rounded-md text-white hidden lg:block bg-orange-500 hover:bg-orange-400 hover:scale-105 transition duration-200 ease-in-out" type="submit">
 			Join Us
 		</button>
 		<div class="block lg:hidden" @click="overflow = true">
@@ -39,12 +39,12 @@
 				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#about`" :class="{'nav-col': about}" @click="home = false, about = !about, events = false, sponsors = false, schedule = false, prizes = false, team = false">About</a></li>
 				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#events`" :class="{'nav-col': events}" @click="home = false, about = false, events = !events, sponsors = false, schedule = false, prizes = false, team = false">Events</a></li>
 				<!-- <li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#tracks`">Tracks</a></li> -->
-				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#sponsors`" :class="{'nav-col': sponsors}" @click="home = false, about = false, events = false, sponsors = !sponsors, schedule = false, prizes = false, team = false">Sponsors</a></li>
+				<!-- <li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#sponsors`" :class="{'nav-col': sponsors}" @click="home = false, about = false, events = false, sponsors = !sponsors, schedule = false, prizes = false, team = false">Sponsors</a></li> -->
 				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#schedule`" :class="{'nav-col': schedule}" @click="home = false, about = false, events = false, sponsors = false, schedule = !schedule, prizes = false, team = false">Schedule</a></li>
 				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#prizes`" :class="{'nav-col': prizes}" @click="home = false, about = false, events = false, sponsors = false, schedule = false, prizes = !prizes, team = false">Prizes</a></li>
 				<li><a class="hover:underline transition ease-in-out duration-300 cursor-pointer" v-scroll-to="`#team`" :class="{'nav-col': team}" @click="home = false, about = false, events = false, sponsors = false, schedule = false, prizes = false, team = !team">Team</a></li>
 			</ul>
-			<button class="mt-12 h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
+			<button class="mt-12 h-10 px-6 font-semibold rounded-md text-white bg-orange-500 hover:bg-orange-400 hover:scale-105 transition duration-200 ease-in-out" type="submit">
 			Join Us
 		</button>
 		</div>
@@ -58,7 +58,7 @@ export default {
 			overflow: false,
 			showNavbar: true,
 			lastScrollPosition: 0,
-			home: false,
+			home: true,
 			about: false,
 			events: false,
 			sponsors: false,
@@ -91,7 +91,7 @@ export default {
 
 <style>
 header {
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Inter', sans-serif;
 }
 
 .nav-col {
