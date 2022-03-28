@@ -26,7 +26,7 @@ import Footer from './components/Footer.vue';
 							Register
 						</button>
 						<button class="h-10 px-6 font-semibold rounded-md text-white hover:scale-105 transition duration-200 ease-in-out" style="background-color: #5865F2;" type="submit">
-							<img src="./assets/Discord-Logo+Wordmark-White.svg" class="w-24">
+							<img src="./assets/discord.svg" class="w-24">
 						</button>
 					</div>
 				</div>
